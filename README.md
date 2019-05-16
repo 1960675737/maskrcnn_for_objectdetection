@@ -1,1 +1,2 @@
-# maskrcnn_for_objectdetection
+# Mask R-CNN for Object Detection
+Refer to INSTALL.md for the environment configuration
