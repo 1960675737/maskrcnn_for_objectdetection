@@ -4,13 +4,39 @@
 
 Check [INSTALL.md](INSTALL.md) for installation instructions.
 
-## the functions of files or folders
+## the function of files or folders
 
 "configs" Folder for parameter files.We use Faster R-CNN with ResNet-101-FPN network  for target detection,and the corresponding parameter file is "e2e_faster_rcnn_R_101_FPN_1x.yaml".
 
 "last_checkpoint" ducument stores the pre-trained model.the pre-trained model of Faster R-CNN with ResNet-101-FPN network:https://download.pytorch.org/models/maskrcnn/e2e_faster_rcnn_R_101_FPN_1x.pth
 
 "tools" folder contains model training function and test function.
+
+### Data structure 
+Please constructe your project like this.
+```
+project
+│   README.md
+|   INSTALL.md
+|   last_checkpoint
+│   requirements.txt    
+│   setup.py
+│   e2e_faster_rcnn_R_101_FPN_1x.pth.pth    // Pretrained weights on MS COCO
+|  
+└───datasets
+│   └───annotaion   //ground truth annotation files
+│   │ 
+│   └───train_data   
+│   │ 
+│   └───val_data   
+│   
+└───configs
+|   └─── .yaml     // modified parameter file
+│ 
+└─── 	maskrcnn_benchmark  // maskrcnn network building functions
+│ 
+└───tools      // model training function and test function
+```
 
 ## training
 
