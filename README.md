@@ -24,7 +24,7 @@ project
 │   e2e_faster_rcnn_R_101_FPN_1x.pth.pth    // Pretrained weights on MS COCO
 |  
 └───datasets
-│   └───annotaion   //ground truth annotation files
+│   └───annotation   //ground truth annotation files
 │   │ 
 │   └───train_data   
 │   │ 
