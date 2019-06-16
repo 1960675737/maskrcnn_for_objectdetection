@@ -1,3 +1,4 @@
+# 对.pth格式的预训练权重文件进行操作，主要是删除最后的分类全连接层文件，删除后直接用于训练会出现问题
 import torch
 path=""
 _d=torch.load(path)
