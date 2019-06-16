@@ -1,3 +1,4 @@
+# 将.pkl格式的预训练权重文件删除最后的分类全连接层权重，得到.pth格式权重文件，然后用自己的数据集微调模型
 import os
 import torch
 import argparse
